@@ -10,11 +10,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "next-app-trpc": "./dist/index.js"
+    "next-app-trpc": "dist/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheSteelNinjaCode/next-app-trpc"
+    "url": "git+https://github.com/TheSteelNinjaCode/next-app-trpc.git"
   },
   "keywords": [
     "nextjs",
