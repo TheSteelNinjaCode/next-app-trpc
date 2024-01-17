@@ -30,28 +30,40 @@ When you run `next-app-trpc`, the following dependencies are automatically insta
 The typical project structure when using `next-app-trpc` in a Next.js application looks like this:
 
 ```bash
-Next.JS
+Next.js
 .
 ├── src
 │   ├── app
-│   │   ├── _trpc  # <-- add `withTRPC()`-HOC here
-|   |   |   └── client.ts  # <-- tRPC client
-|   |   |   └── TrpcProvider.tsx  # <-- tRPC provider
+│   │   ├── _trpc
+│   │   │   ├── client.ts  # tRPC client
+│   │   │   └── TrpcProvider.tsx  # tRPC provider
 │   │   │   └── serverClient.ts  # <-- tRPC server client
 │   │   ├── api
 │   │   │   └── trpc
 │   │   │       └── [trpc]
-|   |   |           └── route.ts  # <-- tRPC HTTP handler
-│   │   └── [..]
+│   │   │           └── route.ts  # tRPC HTTP handler
 │   ├── server
 │   │   ├── routers
-│   │   │   ├── user.ts  # <-- sub routers
-│   │   │   ├── post.ts  # <-- sub routers
-│   │   │   └── [..]
-│   │   ├── index.ts  # <-- main router
-│   │   └── trpc.ts      # <-- procedure helpers
-│   └── [..]
-└── [..]
+│   │   │   ├── user.ts  # Sub routers
+│   │   │   ├── post.ts  # Sub routers
+│   │   ├── index.ts  # Main router
+│   │   └── trpc.ts  # Procedure helpers
+└── [...]
+```
+
+## Example
+
+To demonstrate how you can use `next-app-trpc`, here's a basic example:
+
+```bash
+"use client";
+
+import { trpc } from "./_trpc/client";
+
+export default function Home() {
+  const greeting = trpc.greeting.useQuery();
+  return <h1>{greeting.data ?? "No data"}</h1>;
+}
 ```
 
 ## Documentation and Resources
