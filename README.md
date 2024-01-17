@@ -53,6 +53,20 @@ Next.JS
 └── [..]
 ```
 
+## Documentation and Resources
+
+For comprehensive guides and best practices, refer to the official documentation of each tool and library integrated with `next-app-trpc`:
+
+- Next.js Documentation: [Next.js Official Docs](https://nextjs.org/docs/getting-started)
+- tRPC Documentation: [tRPC Official Docs](https://trpc.io/)
+- React Query Documentation: [React Query Official Docs](https://react-query.tanstack.com/)
+- Superjson Documentation: [Superjson Official Docs](https://www.npmjs.com/package/superjson)
+- Decimal.js Documentation: [Decimal.js Official Docs](https://mikemcl.github.io/decimal.js/)
+
+## For video tutorials, check out
+
+- [How to use next-app-trpc](https://youtu.be/6c08XXgafbk)
+
 ## Contributing
 
 Contributions to `next-app-trpc` are welcome. If you have any suggestions, bug reports, or pull requests, feel free to open an issue or submit a pull request on the repository.
