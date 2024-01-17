@@ -1,7 +1,7 @@
 {
   "name": "next-app-trpc",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A Node.js package for seamless integration of tRPC into existing Next.js projects. It simplifies setting up tRPC clients/servers, managing API routes, and ensuring compatibility with import aliases.",
   "main": "./dist/index.js",
   "type": "module",
   "scripts": {
