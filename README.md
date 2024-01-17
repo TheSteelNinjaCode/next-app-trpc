@@ -37,6 +37,7 @@ Next.JS
 │   │   ├── _trpc  # <-- add `withTRPC()`-HOC here
 |   |   |   └── client.ts  # <-- tRPC client
 |   |   |   └── TrpcProvider.tsx  # <-- tRPC provider
+│   │   │   └── serverClient.ts  # <-- tRPC server client
 │   │   ├── api
 │   │   │   └── trpc
 │   │   │       └── [trpc]
